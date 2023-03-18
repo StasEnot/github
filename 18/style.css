@@ -1,0 +1,70 @@
+  @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+  
+  
+  
+  
+  
+  #mario_animation{
+	  width: 200px;
+	height: 200px;
+	margin: 50px;
+	border-radius: 50%;
+    background-image: url(img/m.jpg); 
+	box-shadow:0 0 0 5px red , 0 0 0 10px #FFFFFF;
+    transition:border-radius 1s linear, box-shadow 1s 1s ease, transform 1s 2s linear, background-image 1s 3s ease;
+  }
+  
+  body{
+ background-color:black;
+ font-family: 'Climate Crisis', cursive;
+  }
+  
+  header{
+	display:flex;
+	align-items:center;
+	flex-direction:column;  
+	background-color: red;
+  }
+  
+  header:hover #mario_animation{
+	border-radius:1px;
+    box-shadow: 0 0 0 10px #fc0017, 0 0 0 20px #FFFFFF;
+	transform:  translateY(400px) scale(1.1) rotate(360deg)rotate(0deg);
+	background-image:url(img/mario1.jpg)
+	
+  }
+  
+  #text_animation{
+	  color:white;
+	 display:flex;
+     font-size:80px;	 
+  }
+  
+  
+  .S{
+	 transform-origin:0% 100% 0px;
+     transition: transform 1s 3s ease;
+	 
+ }	
+ 
+ header:hover .S{
+	 transform:translateX(-700px) scale(1,1) rotate(360deg) ;
+ }
+ 
+ .T {
+	 transform-origin:0% 100% 0px;
+     transition: transform 1s 3s ease ;
+ }	
+ 
+ header:hover .T{
+	 transform: translateX(-350px) scale(0.8,0.8)rotate(360deg);
+ }
+ .A{
+	 transform-origin:0% 100% 0px;
+     transition: transform 1s 3s ease ;
+ }	
+ 
+ header:hover .A{
+	 transform: scale(0.8,0.8)rotate(360deg);
+ }
+ 
